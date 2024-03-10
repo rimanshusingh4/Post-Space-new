@@ -1,0 +1,17 @@
+<% include ./partials/header.ejs %>
+
+<div class="w-full h-screen bg-[url('https://images.unsplash.com/photo-1620121684840-edffcfc4b878?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-cover flex items-center justify-center">
+  <div class="w-[25vw] h-[55vh] border-2 rounded-xl px-20 py-10 backdrop-blur-md bg-white/2 ">
+    <h1 class="text-2xl text-center font-semibold text-white tracking-tight leading-none">Welcome to <span class="text-orange-600">Post Space</span></h1>
+    <form action="/login" method="post">
+      <input class="border-2 placeholder-white bg-transparent rounded-md block mt-3 w-full px-3 py-2" type="text" name="username" placeholder="Enter Username"/>
+      <input class="border-2 placeholder-white bg-transparent rounded-md block mt-3 w-full px-3 py-2" type="password" name="password" placeholder="Enter You Password"/>
+      <a href="/forget" class="mt-2 font-semibold text-zinc-400 inline-block hover:text-orange-600" >Forget Password ?</a>
+      <p class="text-sm text-zinc-300">By clicking You accept our Terms & Conditions.</p>
+      <input class="block cursor-pointer w-full mt-2 text-white bg-orange-600 p-3 rounded-lg" type="submit"/>
+    </form>
+    <a class="inline-block mt-3 text-sm font-semibold hover:text-orange-600 text-zinc-400" href="/register">Don't have an account ?</a>
+  </div>
+</div>
+
+<% include ./partials/footer.ejs %>

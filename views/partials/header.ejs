@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Space</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../../stylesheets/style.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+
+</head>
+<body>
+  <% if(nav === true && log === true) {%>
+    <div class="w-full px-10 py-2 flex justify-between items-center bg-zinc-700 text-white fixed z-20">
+      <div class="flex justify-between w-1/4 items-center text-black">
+        <h3 class="font-bold text-orange-600 text-2xl">Post Space</h3>
+        <h5 class="font-normal text-md hover:bg-zinc-200 p-2 rounded-xl cursor-pointer">Today</h5>
+        <h5 class="font-normal text-md hover:bg-zinc-200 p-2 rounded-xl cursor-pointer">Watch</h5>
+        <h5 class="font-normal text-md hover:bg-zinc-200 p-2 rounded-xl cursor-pointer">Explore</h5>
+      </div>
+      <div class="flex gap-8 items-center text-black">
+        <h5 class="font-normal text-md p-2 rounded-xl hover:underline cursor-pointer">About</h5>
+        <h5 class="font-normal text-md p-2 rounded-xl hover:underline cursor-pointer">Business</h5>
+        <h5 class="font-normal text-md p-2 rounded-xl hover:underline cursor-pointer">Press</h5>
+        <a href="/profile" class="hover:bg-zinc-200 py-2 px-4 rounded-lg font-semibold">Profile</a>
+        <a href="/feed" class="hover:bg-zinc-200 py-2 px-4 rounded-lg font-semibold">Feed</a>
+        <a href="/logout" class="px-3 py-2 bg-orange-700 text-white font-bold rounded-xl">Logout</a>
+      </div>
+    </div>
+  <% } %>
+  <% if(nav === true && log === false) {%>
+    <div class="w-full px-6 py-4 flex justify-between items-center bg-white text-white fixed z-20">
+      <div class="flex justify-between w-1/4 items-center text-black">
+        <h3 class="font-bold text-orange-600 text-2xl">Post Space</h3>
+        <h5 class="font-semibold text-md hover:bg-zinc-200 p-2 rounded-xl cursor-pointer">Today</h5>
+        <h5 class="font-semibold text-md hover:bg-zinc-200 p-2 rounded-xl cursor-pointer">Watch</h5>
+        <h5 class="font-semibold text-md hover:bg-zinc-200 p-2 rounded-xl cursor-pointer">Explore</h5>
+      </div>
+      <div class="flex gap-8 items-center text-black">
+        <h5 class="font-semibold text-md p-2 rounded-xl hover:underline cursor-pointer">About</h5>
+        <a href="/feed" class="hover:bg-zinc-200 py-2 px-4 rounded-lg font-semibold">Feed</a>
+        <h5 class="font-semibold text-md p-2 rounded-xl hover:underline cursor-pointer">Press</h5>
+        <a href="/login" class="px-3 py-2 bg-orange-700 font-bold rounded-2xl text-white">Login</a>
+        <a href="/register" class="px-3 py-2 bg-white text-black font-bold rounded-xl hover:bg-orange-700 hover:text-white">Signup</a>
+      </div>
+    </div>
+  <% } %>
+  
